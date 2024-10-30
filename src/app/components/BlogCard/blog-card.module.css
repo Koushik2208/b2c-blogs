@@ -1,0 +1,75 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardContent {
+    padding: 20px;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.cardExcerpt {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4; /* Add this line */
+    -webkit-box-orient: vertical;
+    box-orient: vertical; /* You may also want to add this for compatibility */
+}
+
+.cardAuthor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.authorAvatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.authorName {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.cardButton {
+    display: inline-block;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cardButton:hover {
+    background-color: #2980b9;
+}
