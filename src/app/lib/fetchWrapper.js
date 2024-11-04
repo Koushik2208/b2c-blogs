@@ -1,10 +1,10 @@
-const BASE_URL = 'https://api.shopdiy.in/'; // Base URL for all API requests
+const BASE_URL = 'https://api-uat.shopdiy.in/'; // Base URL for all API requests
 
 const fetchWrapper = async (endpoint, options = {}) => {
   try {
     const headers = new Headers({
       'Content-Type': 'application/json',
-      domain: 'meeat.in', // Example custom header
+      domain: 'uat.meeat.in', // Example custom header
       ...options.headers, // Merge any additional headers
     });
 
